@@ -1,0 +1,18 @@
+# Builtin sorts Int and Bool are supported implicitly
+constants:
+  a: Int
+  b: Int
+functions:
+  f:
+    domain: [Int]
+    range: Int
+  P:
+    domain: [Int]
+    range: Bool
+axioms_smt2:
+  # Monotone and extensive f
+  - "(forall ((x Int) (y Int)) (=> (<= x y) (<= (f x) (f y))))"
+  - "(forall ((x Int)) (<= x (f x)))"
+  # Domain facts
+  - "(> a 0)"
+  - "(>= b a)"
