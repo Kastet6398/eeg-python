@@ -1,0 +1,13 @@
+timestamp,status,elapsed_ms,conjecture_sexpr
+1755426316,DISPROVEN,1,(forall ((x Int) (z Int)) (and (= (>= 0 x) (= (>= 3 z) (<= (- 3) a))) (= 1 x)))
+1755426316,DISPROVEN,0,(= (<= y z) (= (= a z) (<= b z)))
+1755426316,DISPROVEN,0,(<= (* 3 b) a)
+1755426316,DISPROVEN,0,false
+1755426316,DISPROVEN,0,"(let ((a!1 (and (or (not (P (- 2))) (<= (- 2) x)) (not (>= (- 1) b)))))
+  (not (= (= z b) a!1)))"
+1755426316,DISPROVEN,0,(not (P a))
+1755426316,DISPROVEN,0,"(let ((a!1 (= (<= 0 a) (or (not (>= (- 3) z)) (not (<= z a))))))
+  (not a!1))"
+1755426316,DISPROVEN,1,(forall ((y Int)) (= (f a) (f y)))
+1755426316,DISPROVEN,0,(not (P 2))
+1755426316,DISPROVEN,0,(>= x 0)
